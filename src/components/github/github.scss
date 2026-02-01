@@ -1,0 +1,60 @@
+.card{
+    flex-grow: 1;
+    flex-basis: 10rem;
+
+    padding-inline: 0.8rem;
+    padding-block: 0.5rem;
+    background-color: rgb(48, 47, 47);
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    gap:0.8rem;
+
+    .img{
+        width: 100%;
+        border-radius: 0.5rem;
+    }
+    h1{
+        font-size: 1.1rem;
+        font-weight: 400;
+    }
+    .desc{
+        opacity: 0.7;
+        line-height: 1.1rem;
+        font-size: 0.8rem;
+
+    }
+    .tags{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.2rem;
+        .tag{
+            background-color: rgb(56, 61, 56);
+            width: fit-content;
+            padding-inline: 0.5rem;
+            padding-block: 0.3rem;
+            white-space: nowrap;
+            border-radius: 0.4rem;
+        }
+    }
+    .urls{
+        display: flex;
+        gap: 2rem;
+        a{
+            color: rgb(127, 212, 212);
+            text-decoration: none;
+        }
+    }
+}
+
+.cards{
+    overflow: scroll;
+    scroll-behavior: smooth;
+    height: 100%;
+    padding: 1rem;
+    color: rgb(215, 221, 226);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding-bottom: 10rem;
+}

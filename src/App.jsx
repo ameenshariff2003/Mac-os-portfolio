@@ -4,6 +4,8 @@ import viteLogo from '/vite.svg'
 import './App.scss'
 import Dock from './components/Dock/Dock'
 import Nav from './components/Nav/Nav'
+import Window from './components/mac-window/Window'
+import Github from './components/github/Github'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -12,7 +14,7 @@ function App() {
   <main>
   <Nav/>
   <Dock/>
-
+<Github/>
   </main>
   )
 }
