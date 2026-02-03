@@ -1,5 +1,7 @@
 .dock{
     display: flex;
+      flex-wrap: wrap;            /* 🔑 allow wrapping */
+
     gap: 0.6rem;
     position: absolute;
     bottom: 0.3rem;
@@ -59,3 +61,59 @@
 }
 
 }
+/* =========================
+   TABLET (≤ 768px)
+========================= */
+@media (max-width: 768px) {
+  .dock {
+    gap: 0.45rem;
+    padding-inline: 0.6rem;
+    padding-block: 0.45rem;
+
+    .icon {
+      width: 2.3rem;
+      padding: 0.2rem;
+    }
+
+    .icon:hover {
+      transform: scale(1.15) translateY(-15%);
+    }
+
+    .icon:hover + .icon,
+    .icon:has(+ .icon:hover) {
+      transform: scale(1.05) translateY(-8%);
+    }
+  }
+}
+
+/* =========================
+   MOBILE (≤ 480px)
+========================= */
+@media (max-width: 480px) {
+  .dock {
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 0.35rem;
+    padding-inline: 0.45rem;
+    padding-block: 0.35rem;
+    bottom: 0.25rem;
+
+    .icon {
+      width: 3rem;
+      padding: 0.15rem;
+    }
+
+    /* Reduce hover lift on touch screens */
+    .icon:hover {
+      transform: scale(1.1);
+    }
+
+    .icon:hover + .icon,
+    .icon:has(+ .icon:hover) {
+      transform: scale(1.05);
+    }
+  }
+}
+

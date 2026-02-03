@@ -2,12 +2,14 @@
    
     border-radius: 0.7rem;
     overflow: hidden;
+    position: relative;
 
     color: rgb(197, 195, 195);
 
 
     background-color: rgb(3, 3, 3);
     height: 100%;
+
 
 
     .nav{
@@ -34,6 +36,8 @@
         
             .red{
                 background-color: red;
+                cursor: pointer;
+                z-index: 1000;
 
             }
             .yellow{
@@ -49,4 +53,14 @@
 }
 .main-content{
     height: 100%;
+}
+
+*::-webkit-scrollbar{
+    width: 8px;
+
+}
+*::-webkit-scrollbar-thumb{
+        background-color: #3a3939;
+        border-radius: 1rem;
+
 }

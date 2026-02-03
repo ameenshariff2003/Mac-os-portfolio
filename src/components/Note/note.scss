@@ -1,0 +1,26 @@
+.note {
+  background: #0b0b0b;
+  color: #e6e6e6;
+  font-family: "SF Mono", Menlo, Monaco, Consolas, monospace;
+  font-size: 0.8rem;
+  line-height: 1.6;
+
+  padding: 16px;
+  border-radius: 8px;
+  height: 100%;
+  overflow: auto;
+  padding-bottom: 4rem;
+
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+/* 🔥 THIS IS THE DOTTED LINE */
+.note hr {
+  border: none;
+  border-top: 1px dashed #555;
+  margin: 12px 0;
+}
+
+pre{
+  background-color:transparent !important;
+}

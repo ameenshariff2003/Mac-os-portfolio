@@ -25,4 +25,41 @@ nav{
         display: flex;
         gap: 0.7rem;
     }
+
+    
+}
+/* -------------------------
+   TABLET (≤ 768px)
+-------------------------- */
+@media (max-width: 768px) {
+  nav {
+    padding-inline: 0.5rem;
+
+    .left {
+      gap: 0.6rem;
+    }
+
+    .nav-item p {
+      display: none; // hide name to save space
+    }
+
+    .nac_item p {
+      font-size: 0.8rem;
+    }
+  }
+}
+
+/* -------------------------
+   MOBILE (≤ 480px)
+-------------------------- */
+@media (max-width: 480px) {
+  nav {
+    .nac_item {
+      display: none; // hide menu labels
+    }
+
+    .right {
+      gap: 0.5rem;
+    }
+  }
 }

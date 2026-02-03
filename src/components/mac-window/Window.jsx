@@ -3,19 +3,20 @@ import { Rnd } from 'react-rnd'
 import "./window.scss"
 
 
-const Window = ({children}) => {
+const Window = ({children,width="40vw",height="50vh",Xasix="100",Yasix="100" ,windowname,setWindowState}) => {
   return (
    <Rnd default={{
-    width:"40vw",
-    height:"50vh",
-    x:"300",
+    width:width,
+    height:height,
+    x:Xasix,
 
-    y:"200"
-   }} >
-   <div className="window">
+    y:Yasix
+    
+   }}  >
+   <div className="window" >
    <div className="nav">
         <div className="dots">
-            <div className="dot red"></div>
+            <div onClick={()=>setWindowState(state=>({...state,[windowname]:false}))} className="dot red"></div>
             <div className="dot yellow"></div>
             <div className="dot green"></div>
         </div>
