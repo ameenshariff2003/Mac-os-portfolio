@@ -64,3 +64,8 @@
         border-radius: 1rem;
 
 }
+@media (max-width: 480px){
+   .window{ 
+    width: 80% !important;
+   }
+}
