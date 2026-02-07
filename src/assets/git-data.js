@@ -1,53 +1,33 @@
 const gitData = [
   {
     id: 1,
-    img: "https://images.unsplash.com/photo-1555066931-4365d14bab8c",
-    title: "Task Tracker App",
+    img: "https://i.pinimg.com/736x/72/1b/bd/721bbd1c1059df7157b6dec44cd27c85.jpg",
+    title: "HOLLYDAY",
     description:
-      "A full-stack task management application with user authentication",
-    tags: ["React", "Node.js", "Express", "MongoDB", "JWT"],
-    repoLink: "https://github.com/username/task-tracker-mern",
+      "Hollyday is a full-stack hotel booking web application built using the MERN stack with a modern and clean UI. The project is currently in progress and will be live soon.",
+    tags: ["MERN", "React", "Node.js", "MongoDB", "Express"],
+    repoLink: "https://github.com/ameenshariff2003/Hotel.git",
     demoLink: null
+  },
+  {
+    id: 2,
+    img: "https://i.pinimg.com/736x/9f/98/2d/9f982d6a5d78c8205bb2110149410e73.jpg",
+    title: "CAREO",
+    description:
+      "Careo is a full-stack web application for buying and selling second-hand cars. It includes authentication, authorization, car listings, reviews, and a responsive UI for a seamless user experience.",
+    tags: ["HTML", "CSS", "JavaScript", "Node.js", "Express", "MongoDB", "EJS"],
+    repoLink: null,
+    demoLink: "https://careo-web-app-7hv4.vercel.app/listings"
   },
   {
     id: 3,
-    img: "https://images.unsplash.com/photo-1553877522-43269d4ea984",
-    title: "Blog Platform",
+    img: "https://i.pinimg.com/564x/27/5f/cb/275fcb933434a4d8cdb8b0280241a65b.jpg",
+    title: "WONDERLUST",
     description:
-      "A blogging platform where users can create, edit, and delete posts. Includes authentication, protected routes",
-    tags: ["React", "Node", "MongoDB", "Express"],
-    repoLink: "https://github.com/username/mern-blog-app",
-    demoLink: "https://mern-blog-demo.netlify.app"
-  },
-  {
-    id: 4,
-    img: "https://images.unsplash.com/photo-1521737604893-d14cc237f11d",
-    title: "Job Portal System",
-    description:
-      "A job portal application with separate recruiter and candidate roles, job posting,authentication.",
-    tags: ["MERN", "Role-Based Auth", "JWT"],
-    repoLink: "https://github.com/username/mern-job-portal",
-    demoLink: "https://mern-job-portal.vercel.app"
-  },
-  {
-    id: 5,
-    img: "https://images.unsplash.com/photo-1508780709619-79562169bc64",
-    title: "Real-Time Chat App",
-    description:
-      "A real-time chat application using Socket.io with private chats, online user status.",
-    tags: ["React", "Node.js", "Socket.io", "MongoDB"],
-    repoLink: "https://github.com/username/mern-chat-app",
-    demoLink: "https://mern-chat-demo.netlify.app"
-  },
-  {
-    id: 6,
-    img: "https://images.unsplash.com/photo-1559028012-481c04fa702d",
-    title: "Vehicle Service Booking System",
-    description:
-      "A service booking platform for vehicles with category-based pricing, booking management, and admin dashboard.",
-    tags: ["MERN", "CRUD", "Admin Panel"],
-    repoLink: "https://github.com/username/vehicle-service-mern",
-    demoLink: null
+      "Wonderlust is a travel web application where users can explore, post, and review holiday destinations. It supports authentication, posting destinations, and user reviews with a responsive interface.",
+    tags: ["HTML", "CSS", "JavaScript", "Node.js", "Express", "MongoDB", "EJS"],
+    repoLink: "https://github.com/ameenshariff2003/wonderlust.git",
+    demoLink: "https://wonderlust-project-rjc5.onrender.com/listings"
   }
 ];
 

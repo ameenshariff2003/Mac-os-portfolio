@@ -41,12 +41,12 @@ const links =()=>{
     ><img src="/icons/github.svg" alt="" />
     </div>
 
-    <div className="icon calender"
+    {/* <div className="icon calender"
 
   onClick={() => window.open("https://calendar.google.com", "_blank")}
     >
     <img src="/icons/calender.svg" alt="" />
-    </div>
+    </div> */}
 
     <div className="icon link"
     onClick={links}
