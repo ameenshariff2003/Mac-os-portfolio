@@ -67,8 +67,8 @@ function App() {
   {windowState.cli.open&& <Cli windowname="cli"      setTopZ={setTopZ}
  zIndex={windowState.cli.z} setWindowState={setWindowState}/>}
 
- {windowState.links.open&& <Mail windowname="cli"      setTopZ={setTopZ}
- zIndex={windowState.cli.z} setWindowState={setWindowState}/>}
+ {windowState.links.open&& <Mail windowname="links"      setTopZ={setTopZ}
+ zIndex={windowState.links.z} setWindowState={setWindowState}/>}
 
 
 

@@ -40,7 +40,7 @@ const Window = ({children,width="40vw",height="50vh",Xasix="100",Yasix="100" , s
 }} >
    <div className="nav">
         <div className="dots">
-            <div onClick={()=>setWindowState(state=>({...state,[windowname]:false}))} className="dot red"></div>
+            <div onClick={()=>setWindowState(state=>({...state,[windowname]:{open:false}}))} className="dot red"></div>
             <div className="dot yellow"></div>
             <div className="dot green"></div>
         </div>
