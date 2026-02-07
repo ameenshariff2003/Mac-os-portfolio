@@ -34,9 +34,9 @@ const GitCard = ({data})=>{
 }
 
 
-const Github = ({windowname,setWindowState}) => {
+const Github = ({windowname,setWindowState , setTopZ, zIndex}) => {
   return (
-    <Window Xasix='125' Yasix='110' windowname={windowname} setWindowState={setWindowState} >
+    <Window Xasix='125' Yasix='110' windowname={windowname} setTopZ={setTopZ} zIndex={zIndex} setWindowState={setWindowState} >
         <div className="cards">
         {gitData.map(project =>{
             return <GitCard data={project}/>

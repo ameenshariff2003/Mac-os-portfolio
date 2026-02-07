@@ -8,28 +8,68 @@ import Note from './components/Note/Note'
 import Resume from './components/Resume/Resume'
 import Spotify from './components/spotify/Spotify'
 import Cli from './components/Terminal/Cli'
+import Mail from './components/mail/Mail'
 
 function App() {
 
   const [windowState, setWindowState] = useState({
-    github:false,
-    note:false,
-    resume:false,
-    spotify:false,
-    cli:false
+  github: { open: false, z: 1 },
+  note: { open: false, z: 1 },
+  pdf: { open: false, z: 1 },
+  spotify: { open: false, z: 1 },
+  cli: { open: false, z: 1 },
+    links: { open: false, z: 1 }
+
   })
+
+  const [topZ, setTopZ] = useState(10)
+  const openWindow = (name) => {
+  setTopZ(prev => {
+    const newZ = prev + 1
+
+    setWindowState(state => ({
+      ...state,
+      [name]: {
+        ...state[name],
+        open: true,
+        z: newZ
+      }
+    }))
+
+    return newZ
+  })
+
+
+}
+
+
 
 
 
   return (
   <main>
   <Nav/>
-  <Dock setWindowState = {setWindowState}/>
-  {windowState.github&& <Github windowname="github" setWindowState={setWindowState}/>}
-    {windowState.note&& <Note windowname="note" setWindowState={setWindowState}/>}
-  {windowState.resume&& <Resume windowname="resume" setWindowState={setWindowState}/> }
-  {windowState.spotify&& <Spotify windowname="spotify" setWindowState={setWindowState}/> }
-  {windowState.cli&& <Cli windowname="cli" setWindowState={setWindowState}/>}
+  <Dock setWindowState = {setWindowState} openWindow={openWindow}/>
+
+
+  {windowState.github.open&& <Github windowname="github"     setTopZ={setTopZ}
+ zIndex={windowState.github.z} setWindowState={setWindowState}/>}
+
+    {windowState.note.open&& <Note windowname="note"    setTopZ={setTopZ}
+ zIndex={windowState.note.z} setWindowState={setWindowState}/>}
+
+  {windowState.pdf.open&& <Resume windowname="pdf"     setTopZ={setTopZ}
+ zIndex={windowState.pdf.z} setWindowState={setWindowState}/> }
+
+  {windowState.spotify.open&& <Spotify windowname="spotify"     setTopZ={setTopZ}
+ zIndex={windowState.spotify.z} setWindowState={setWindowState}/> }
+
+  {windowState.cli.open&& <Cli windowname="cli"      setTopZ={setTopZ}
+ zIndex={windowState.cli.z} setWindowState={setWindowState}/>}
+
+ {windowState.links.open&& <Mail windowname="cli"      setTopZ={setTopZ}
+ zIndex={windowState.cli.z} setWindowState={setWindowState}/>}
+
 
 
 

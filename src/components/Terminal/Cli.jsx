@@ -181,9 +181,9 @@ Tip: commands are lowercase.
    COMPONENT
 -------------------------------- */
 
-const Cli = ({windowname,setWindowState}) => {
+const Cli = ({windowname,setWindowState,setTopZ, zIndex}) => {
   return (
-    <Window Xasix='210' Yasix='186' windowname={windowname} setWindowState={setWindowState}>
+    <Window Xasix='210' Yasix='186' windowname={windowname} setTopZ={setTopZ} zIndex={zIndex} setWindowState={setWindowState}>
       <div className="terminal">
         <Terminal
           commands={commands}

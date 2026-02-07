@@ -1,26 +1,33 @@
 import React from 'react'
 import "../Dock/dock.scss"
-const Dock = ({setWindowState}) => {
+const Dock = ({setWindowState , openWindow}) => {
 
 
 const github =()=>{
-  setWindowState(state =>({...state,github:true}))
+  // setWindowState(state =>({...state,github:true}))
+  openWindow("github")
 
 }
 const note =()=>{
-  setWindowState(state =>({...state,note:true}))
+  openWindow("note")
 
 }
 const spotify =()=>{
-  setWindowState(state =>({...state,spotify:true}))
+  // setWindowState(state =>({...state,spotify:{open:true}}))
+    openWindow("spotify")
+
 
 }
 const cli =()=>{
-  setWindowState(state =>({...state,cli:true}))
+  openWindow("cli")
 
 }
 const pdf =()=>{
-  setWindowState(state =>({...state,resume:true}))
+  openWindow("pdf")
+
+}
+const links =()=>{
+  openWindow("links")
 
 }
 
@@ -35,17 +42,24 @@ const pdf =()=>{
     </div>
 
     <div className="icon calender"
+
+  onClick={() => window.open("https://calendar.google.com", "_blank")}
     >
     <img src="/icons/calender.svg" alt="" />
     </div>
 
     <div className="icon link"
+    onClick={links}
     ><img src="/icons/link.svg" alt="" />
     </div>
 
     <div className="icon mail"
     >
-    <img src="/icons/mail.svg" alt="" />
+    
+    <a href="mailto:ameenshariff3443@gmail.com">
+      <img src="/icons/mail.svg" alt="" />
+    </a>
+    
     </div>
 
     <div className="icon note"
