@@ -13,10 +13,11 @@ html,body,#root{
 main{
 height: 100%;
 width: 100%;
-background-image:url(/public/mountain.jpg);
-background-repeat: no;
-object-fit:cover;
-background-position: center;
+background-image:url(/public/bg.jpg);
+ object-fit:cover ;
+ background-size: cover;        /* THIS makes it full */
+  background-position: center;   /* Center image */
+  background-repeat: no-repeat;
 overflow: hidden;
 position: absolute;
 }

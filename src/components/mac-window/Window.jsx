@@ -20,7 +20,7 @@ const Window = ({children,width="40vw",height="50vh",Xasix="100",Yasix="100" , s
     y: isMobile ? 70 : Yasix
   }}
   minWidth={isMobile ? "90%" : 300}
-  minHeight={200}
+  minHeight={340}
   bounds="window" >
    <div className="window" 
   onMouseDown={() => {

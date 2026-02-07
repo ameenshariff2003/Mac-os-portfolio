@@ -93,21 +93,21 @@ const HOBBIES = ["Exploring new places", "Painting", "Learning"];
 -------------------------------- */
 
 const commands = {
-  about: {
+  About: {
     description: "About me",
     fn: () =>
       `${PROFILE.name}
 MERN Stack Developer | Frontend & Backend Enthusiast`,
   },
 
-  contact: {
+  Contact: {
     description: "Contact details",
     fn: () =>
       `Email : ${PROFILE.email}
 Phone : ${PROFILE.phone}`,
   },
 
-  social: {
+  Social: {
     description: "Social links",
     fn: () =>
       `GitHub    : ${PROFILE.social.github}
@@ -115,7 +115,7 @@ LinkedIn  : ${PROFILE.social.linkedin}
 Portfolio : ${PROFILE.social.portfolio}`,
   },
 
-  skills: {
+  Skills: {
     description: "Technical skills",
     fn: () =>
       `Languages       : ${SKILLS.languages.join(", ")}
@@ -125,7 +125,7 @@ Databases       : ${SKILLS.databases.join(", ")}
 Version Control : ${SKILLS.versionControl.join(", ")}`,
   },
 
-  projects: {
+  Projects: {
     description: "Academic projects",
     fn: () =>
       PROJECTS.map(
@@ -136,7 +136,7 @@ Stack: ${p.stack.join(", ")}
       ).join("\n"),
   },
 
-  education: {
+  Education: {
     description: "Education details",
     fn: () =>
       EDUCATION.map(
@@ -146,12 +146,12 @@ ${e.institution} (${e.year})`
       ).join("\n"),
   },
 
-  languages: {
+  Languages: {
     description: "Spoken languages",
     fn: () => LANGUAGES.join(", "),
   },
 
-  hobbies: {
+  Hobbies: {
     description: "Personal interests",
     fn: () => HOBBIES.join(", "),
   },
@@ -165,15 +165,15 @@ const welcomeMessage = `
 👋 Welcome to AmeenOS Terminal
 
 Available commands:
-→ about         – Who Am I
-→ contact       – Email & phone
-→ social        – GitHub, LinkedIn, Portfolio
-→ skills        – Tech stack
-→ projects      – Academic projects
-→ education     – Education details
-→ clear         – Clear terminal
+→ About         – Who Am I
+→ Contact       – Email & phone
+→ Social        – GitHub, LinkedIn, Portfolio
+→ Skills        – Tech stack
+→ Projects      – Academic projects
+→ Education     – Education details
+→ Clear         – Clear terminal
 
-Tip: commands are lowercase.
+Tip:First character must be in **UPPERCASE**.
 `;
 
 
